@@ -47,3 +47,27 @@ GitHub
 Usuario: JoelCyberia
 Correo: joel_cyberia@hotmail.com
 Clave: Cyberia2099
+
+Nota: Hacen referencia de css3 en 48:00
+
+class vs id
+La diferencia es que la etiqueta id es irrepetible 
+pero class es repetible y duplicable en multiples
+elementos
+
+href="#"
+se coloca cuando al "elemento" se le puede 
+hacer click (es un enlace) [href="#" en este 
+caso particular el # hace que el enlace sea al mimo sitio] 
+
+REGLAS DE HTML... SEGUN FREDY
+1.- Las etiquetas iran con minusculas MINUSCULAS!!! 
+	Las etiquetas con las rojitas =)
+2.- Las etiquetas se tienen que cerrar. Si la habres 
+	las cierras aun asi no sea necesario.
+3.- Los atributos tambien van minusculas y sus valores
+	 entre comillas. Los atributos son los verdes ;)
+
+4.- Indentar Bien!!! Hay q cerrar a la misma altura
+
+
