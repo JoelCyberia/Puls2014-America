@@ -43,13 +43,18 @@
 }
 .icon-lapiz:before {
 	content: "\e600";
-	margin-right: .5em;
+	font-size: 1.2em;
+	margin-right: .4em;
 }
 /* Arriba fuentes, abajo estilos */
 
 a
 {
 	color: #22BCE0;
+}
+aside
+{
+	display: none;
 }
 body
 {
@@ -113,12 +118,24 @@ header #avatar img
 	width: 55px;
 
 }
-header #logo img
+header #logo
 {
 	border-right: 1px solid white;
 	padding-right: 0.5em;
 	margin-right: 0.5em;
+}
+header #logo img
+{
+	transition: 0.5s;
 	width: 52px;
+}
+header #logo img:hover{
+	transform: rotate(360deg);
+	/*
+	-moz-transform: rotate(90deg);
+	-o-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+	*/
 }
 nav
 {
@@ -248,8 +265,8 @@ nav ul #publicar_nav a
 
 /* Midia querys */
 
-@media screen and (min-width: 800px)
-{
+@media screen and (min-width: 800px){
+
 	#contenido
 	{
 		overflow: hidden;
@@ -264,3 +281,21 @@ nav ul #publicar_nav a
 		margin-right: 2%;
 	}
 }
+
+@media screen and (min-width: 900px){
+	aside
+		{
+			display: block;
+			float: right;
+			margin: 1em;
+			width: 25%;
+		}
+	aside video
+	{
+		width: 100%;
+	}	
+
+			
+	}
+
+
