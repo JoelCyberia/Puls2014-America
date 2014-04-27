@@ -126,12 +126,18 @@ header #logo
 }
 header #logo img
 {
-	transition: 0.5s;
+	-webkit-transition: 0.5s;
+	/*si no quiero que vuelva la linea 
+	de arriba copiarla abajo en hover*/
 	width: 52px;
 }
 header #logo img:hover{
-	transform: rotate(360deg);
-	/*
+	
+	-webkit-transform: rotate(360deg);
+	/* si no se usa PREFIXFREE usar los siguientes prefijos.
+		PREFIXFREE necesita estar corriendo en el servidor
+		por eso aun en el ejemplo usa webkit =(
+	-webkit-transition: 0.5s;
 	-moz-transform: rotate(90deg);
 	-o-transform: rotate(90deg);
 	-ms-transform: rotate(90deg);
@@ -159,11 +165,14 @@ nav ul li a
 	display: block;
 	padding: 0.5em;
 	text-decoration: none;
-	
+	-webkit-transition: .2s;	
+}
+nav ul li a:hover
+{	/* Esto es un efecto de animacion */ 
+	background: #22BCE0;
 }
 nav ul #publicar_nav
 {
-
 	position: absolute;
 	right: 0;
 	top:  -0.1em;
@@ -176,6 +185,10 @@ nav ul #publicar_nav a
 	font-style: italic;  
 	padding: 0.6em 0.8em;
 	text-shadow: rgba(0,0,0,0.5) 2px 2px 5px; 
+}
+nav ul #publicar_nav a:hover{ 
+	/* animacion de sombra del boton*/
+	box-shadow: 0 0 30px #F4502A;
 }
 #contenido
 {
@@ -265,7 +278,7 @@ nav ul #publicar_nav a
 
 /* Midia querys */
 
-@media screen and (min-width: 800px){
+@media screen and (min-width: 750px){
 
 	#contenido
 	{
@@ -282,7 +295,7 @@ nav ul #publicar_nav a
 	}
 }
 
-@media screen and (min-width: 900px){
+@media screen and (min-width: 850px){
 	aside
 		{
 			display: block;
