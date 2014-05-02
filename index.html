@@ -31,10 +31,15 @@
 			<li><a href="#">CSS3</a></li>
 			<li><a href="#">Django</a></li>
 			<li id="publicar_nav">
-				<a href="#" class="icon-lapiz">Publicar</a>
+				<a href="#" class="icon-lapiz" id="mostrar-form">Publicar</a>
 			</li>
 		</ul>
-	</nav>
+	</nav> <!-- En este action es el comienzo del js -->
+	<form action="" id="formulario" class="formulario">
+ 		<input type="text" placeholder="Título" id="titulo" name="titulo" required>
+ 		<input type="url" placeholder="Link" id="link" name="link" required>
+ 		<input type="submit" value="Agregar">
+ 	</form>
 	<aside>
 		<video width="320" height="240" controls autoplay>
 			<source src="Video/lecturas.m4v" type="video/mp4">
@@ -69,7 +74,7 @@
 				<a href="#" class="guardar_item icon-estrella"></a>
 			</div>
 		</article>
-
+		
 		<article class="item">
 			<figure class="imagen_item">
 				<img src="Imagenes/imagen.jpg" title="Soy un Pony =)"/>
@@ -213,6 +218,8 @@
 			Mejorando.la 2014
 		</p>
 	</footer>
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script src="formulario.js"></script>
 
 </body>
 </html>
